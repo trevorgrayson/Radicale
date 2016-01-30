@@ -23,8 +23,8 @@ Copy of filesystem storage backend for testing
 
 """
 
-from radicale.storage import filesystem
+from radicale.storage import wtfstorage
 
 
-class Collection(filesystem.Collection):
+class Collection(wtfstorage.Collection):
     """Collection stored in a flat ical file."""

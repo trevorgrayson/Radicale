@@ -74,7 +74,7 @@
 
 # Authentication method
 # Value: None | htpasswd | IMAP | LDAP | PAM | courier | http | remote_user | custom
-#type = None
+type = None
 
 # Custom authentication handler
 #custom_handler =
@@ -157,7 +157,7 @@
 #          OTHER BACKENDS ARE NOT READY FOR PRODUCTION.
 # -------
 # Value: filesystem | multifilesystem | database | custom
-#type = filesystem
+type = wtfstorage
 
 # Custom storage handler
 #custom_handler =
