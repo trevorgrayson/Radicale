@@ -68,10 +68,10 @@ class Collection(ical.Collection):
     def save(self, text):
         self._create_dirs()
 
+        text = Hook.enrich_text(text)
         with open(self._filesystem_path, "w") as fd:
             fd.write(text)
 
-        Hook(self._filesystem_path)
 
     def delete(self):
         os.remove(self._filesystem_path)
